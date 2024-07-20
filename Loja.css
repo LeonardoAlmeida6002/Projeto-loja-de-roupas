@@ -1,0 +1,121 @@
+/* Estilos para header */
+header {
+    height: 80px; /* Reduzi a altura para economizar espaço */
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header p {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    font-family: Arial;
+}
+
+#cabeçalho {
+    display: none; /* Escondo o cabeçalho de links em telas menores */
+}
+
+#logo {
+    width: 60px; /* Reduzi o tamanho do logo */
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+/* Estilos para o slider */
+*{
+    box-sizing: border-box;
+}
+.pré-carrosel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+.carrosel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+img{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+
+/* Estilos para as seções de promoções */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+section p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Estilos para o rodapé */
+.rodapé {
+    padding: 20px;
+    text-align: center;
+}
+
+.rodapé p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.formulario {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; /* Limita a largura do formulário */
+}
+
+/* Responsividade abaixo de 600 pixels */
+@media (max-width: 600px) {
+    header p {
+        font-size: 18px;
+    }
+
+    .slides {
+        width: 800%; /* Ajuste para manter os slides visíveis */
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .manual-navigation,
+    .navigation-auto {
+        width: 100%;
+    }
+
+    .navigation-auto {
+        margin-top: 5px;
+    }
+
+    .manual-btn,
+    .navigation-auto div {
+        margin-right: 5px;
+    }
+
+    .formulario {
+        max-width: 250px; /* Reduz ainda mais a largura do formulário */
+    }
+}
